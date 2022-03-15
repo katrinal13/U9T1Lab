@@ -23,11 +23,23 @@ public class VehicleRunner
  
     // ---- WRITE YOUR TEST CODE BELOW! ----
     // testing all available methods on a Bicycle object
-    
-    
-    
-    
-    
-        
+    Bicycle myBicycle = new Bicycle("Citi Bike", 2, 10);
+    System.out.println(myBicycle.getName());
+    System.out.println(myBicycle.getWheels());
+    System.out.println(myBicycle.getGearCount());
+    myBicycle.move(50);
+    myBicycle.turn(45);
+    myBicycle.brake(0.75);
+    myBicycle.ringBell();
+
+    // testing all available methods on an ElectricScooter object
+    ElectricScooter myScooter = new ElectricScooter("MiniMotors", 2, 250);
+    System.out.println(myScooter.getName());
+    System.out.println(myScooter.getWheels());
+    System.out.println(myScooter.getBatteryCapacity());
+    myScooter.move(60);
+    myScooter.turn(81);
+    myScooter.brake(0.8);
+    myScooter.playSpeaker();
   }
 }
